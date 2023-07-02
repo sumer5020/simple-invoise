@@ -31,6 +31,9 @@ class InvoiceResource extends Resource
                             Forms\Components\TextInput::make('customer')
                                 ->maxLength(250)
                                 ->required(),
+                            Forms\Components\TextInput::make('total')
+                                ->maxLength(250)
+                                ->required(),
                             Forms\Components\Select::make('invoice_type')
                                 ->options([
                                     1 => 'نقد',
